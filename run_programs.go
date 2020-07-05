@@ -1,10 +1,9 @@
 package main
 
-import (
-	codinggoweb "codinggoweb/basics"
-)
+import codinggoweb "codinggoweb/basics"
 
 func main() {
 	// codinggoweb.RunBasicHTTP()
-	codinggoweb.MuxBasicRouter()
+	// codinggoweb.MuxBasicRouter()
+	codinggoweb.BasicTemplateHTTP()
 }
