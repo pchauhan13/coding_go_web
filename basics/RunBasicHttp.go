@@ -11,5 +11,8 @@ func RunBasicHTTP() {
 		fmt.Fprintf(w, "Hello, you have requested: %s\n", r.URL.Path)
 	})
 
+	fs := http.FileServer(http.Dir("static/"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+
 	http.ListenAndServe(":8080", nil)
 }
