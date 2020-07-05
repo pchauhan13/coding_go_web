@@ -5,5 +5,6 @@ import (
 )
 
 func main() {
-	codinggoweb.RunBasicHTTP()
+	// codinggoweb.RunBasicHTTP()
+	codinggoweb.MuxBasicRouter()
 }
