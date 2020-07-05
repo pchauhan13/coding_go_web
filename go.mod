@@ -1,3 +1,3 @@
-module coding_go_web
+module codinggoweb
 
 go 1.14
